@@ -1,0 +1,43 @@
+import pandas as pd
+
+def clean_web_duplicates(web_data_df):
+    return web_data_df.drop_duplicates(
+            subset=['client_id','visitor_id','visit_id','process_step','date_time'])
+
+def clean_web_session_duplicates(web_data_df):
+    return web_data_df.drop_duplicates(
+            subset=['client_id','visitor_id','visit_id','process_step'],
+            keep='last')
+
+def normalize_column_names(df):
+    """
+    Return a new DataFrame whose column names are all lowercase,
+    have no surrounding whitespace, and use underscores instead of spaces.
+    """
+    # Make a copy to avoid modifying the original DataFrame (optional)
+    df = df.copy()
+    
+    # Generate normalized names
+    normalized_cols = (
+        df.columns
+          .str.lower()                   # lowercase
+          .str.strip()                   # remove leading/trailing spaces
+          .str.replace(' ', '_')  # spaces → underscores
+    )
+    
+    # Assign and return
+    df.columns = normalized_cols
+    return df
+
+def drop_not_participating_clients(clients_df):
+    return clients_df.dropna(subset=['variation'])
+
+def drop_null_clients(demo_df):
+    # Count nulls in each row, then keep rows with ≤1 null
+    mask = demo_df.isnull().sum(axis=1) <= 1
+    return demo_df[mask]
+
+def convert_client_age_to_int(demo_df):
+    copy_of_demo_df = demo_df.copy()
+    copy_of_demo_df['clnt_age'] = copy_of_demo_df['clnt_age'].round(0).astype('Int64')
+    return copy_of_demo_df
