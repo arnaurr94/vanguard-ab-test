@@ -42,8 +42,11 @@ def convert_client_age_to_int(demo_df):
     copy_of_demo_df['clnt_age'] = copy_of_demo_df['clnt_age'].round(0).astype('Int64')
     return copy_of_demo_df
 
-    # renaming the colums
+def convert_datetime_to_date_time(web_data_df):
+    web_data_df['date_time'] = web_data_df['date_time'].astype('datetime64[s]')
+    return web_data_df
 
+# renaming the colums
 def rename_demo_columns(df):
 
     new_names = {
