@@ -35,4 +35,4 @@ CREATE TABLE `client` (
 
 ALTER TABLE `participant` ADD FOREIGN KEY (`client_id`) REFERENCES `client` (`client_id`);
 
-ALTER TABLE `session` ADD FOREIGN KEY (`client_id`) REFERENCES `participant` (`client_id`);
+ALTER TABLE `session` ADD FOREIGN KEY (`client_id`) REFERENCES `client` (`client_id`);
