@@ -41,3 +41,19 @@ def convert_client_age_to_int(demo_df):
     copy_of_demo_df = demo_df.copy()
     copy_of_demo_df['clnt_age'] = copy_of_demo_df['clnt_age'].round(0).astype('Int64')
     return copy_of_demo_df
+
+    # renaming the colums
+
+def rename_demo_columns(df):
+
+    new_names = {
+        'clnt_tenure_yr': 'tenure_yr',
+        'clnt_tenure_mnth': 'tenure_months',
+        'clnt_age': 'age',
+        'gendr': 'gender',
+        'num_accts': 'num_accounts',
+        'bal': 'balance',
+        'calls_6_mnth': 'calls_6_months',
+        'logons_6_mnth': 'logins_6_months'
+    }
+    return df.rename(columns=new_names)
