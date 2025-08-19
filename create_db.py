@@ -17,6 +17,6 @@ def save_dataframes_to_db(participating_client_df, clean_demo_df, session_dedupl
     engine = create_engine(f'mysql+pymysql://root:{password}@localhost/{db_name}')
 
     # Upload tables
-    participating_client_df.to_sql("experiment", con = engine, if_exists="replace", index=False)
-    clean_demo_df.to_sql("demo", con = engine, if_exists="replace", index=False)
-    session_deduplicated_web_data_df.to_sql("session", con = engine, if_exists="replace", index=False)
+    clean_demo_df.to_sql("client", con = engine, if_exists="append", index=False)
+    participating_client_df.to_sql("participant", con = engine, if_exists="append", index=False)
+    session_deduplicated_web_data_df.to_sql("session", con = engine, if_exists="append", index=False)

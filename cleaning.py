@@ -60,3 +60,6 @@ def rename_demo_columns(df):
         'logons_6_mnth': 'logins_6_months'
     }
     return df.rename(columns=new_names)
+
+def clean_client_id_column(ref_df, df):
+    return df[df['client_id'].isin(ref_df['client_id'])]
