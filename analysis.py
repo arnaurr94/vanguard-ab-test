@@ -6,12 +6,12 @@ def time_diff(dataframe):
     ## This will be useful for analysing the average duration users spend on each step.
 
     dataframe.sort_values(by=['visit_id', 'date_time'], ignore_index=True, inplace=True)
-    dataframe['time_diff'] = dataframe.groupby('visit_id')['date_time'].diff()
+    dataframe['time_diff'] = dataframe.groupby('visit_id')['date_time'].diff().dt.total_seconds()
     return dataframe
 
 def step_diff(dataframe):
     """Modifies the categorical column 'process_step' to int values. Then groups by 'visit_id' and applies
-    .diff() on column 'process_step'. Stores the values in a new column 'step_diff'.\n
+    .diff() on column 'process_step'. Stores the values in new columns 'step_diff' and 'step_cum_sum'.\n
     Returns the updated dataframe"""
 
     ## This will be useful for analysing if there's a step where users go back to a previous step, it may 
@@ -26,4 +26,5 @@ def step_diff(dataframe):
     }, inplace=True)
 
     dataframe['step_diff'] = dataframe.groupby('visit_id')['process_step'].diff()
+    dataframe['step_cum_sum'] = dataframe.groupby('visit_id')['step_diff'].cumsum()
     return dataframe
