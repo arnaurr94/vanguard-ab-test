@@ -60,3 +60,28 @@ def rename_demo_columns(df):
         'logons_6_mnth': 'logins_6_months'
     }
     return df.rename(columns=new_names)
+
+
+def test_outliers(data):
+    """
+    Return a Series whose index correspond to the rows deemed outliers of the input DatFrame. 
+    """ 
+    Q1 = data.quantile(0.25)
+    Q3 = data.quantile(0.75)
+    IQR = Q3 - Q1
+    lower_boundary = Q1 - (IQR * 1.5)
+    higher_boundary = Q3 + (IQR * 1.5)
+    outliers = data[(data<lower_boundary) | (data>higher_boundary)]
+    return outliers
+
+def drop_outliers(data, column):
+    """
+    Returns an updated Dataframe with no outliers (found through test_outliers). 
+    """ 
+    Q1 = column.quantile(0.25)
+    Q3 = column.quantile(0.75)
+    IQR = Q3 - Q1
+    lower_boundary = Q1 - (IQR * 1.5)
+    higher_boundary = Q3 + (IQR * 1.5)
+    outliers = column[(column<lower_boundary) | (column>higher_boundary)]
+    return data.drop(labels=outliers.index)
