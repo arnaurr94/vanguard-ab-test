@@ -1,0 +1,2193 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='demographics_17563868692890' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (time_step)' inline='true' name='federated.1t1mdz20rf98hj12g1mxv1ejayez' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='time_step' name='excel-direct.174xi8q11x5eqi1ckhvq307alydb'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/orian/Desktop/IH_projects/vanguard-ab-test/time_step.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.174xi8q11x5eqi1ckhvq307alydb' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D10001:no:A1:D10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='variation' ordinal='1' />
+            <column datatype='integer' name='process_step' ordinal='2' />
+            <column datatype='integer' name='time_diff' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D10001:no:A1:D10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EB978F990D76482B99C4E6F7EA2FD595]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[variation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>variation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EB978F990D76482B99C4E6F7EA2FD595]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EB978F990D76482B99C4E6F7EA2FD595]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_diff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[time_diff]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>time_diff</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EB978F990D76482B99C4E6F7EA2FD595]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_EB978F990D76482B99C4E6F7EA2FD595]' role='measure' type='quantitative' />
+      <column caption='Process Step' datatype='integer' name='[process_step]' role='measure' type='quantitative' />
+      <column caption='Time Diff' datatype='integer' name='[time_diff]' role='measure' type='quantitative' />
+      <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/orian/AppData/Local/Temp/TableauTemp/#TableauTemp_0m3q5ps1enm4tz12t8mru0boa1i7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>153130</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>variation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[variation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>variation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>process_step</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[process_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>process_step</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time_diff</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[time_diff]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time_diff</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>531</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_EB978F990D76482B99C4E6F7EA2FD595'>
+            <properties context=''>
+              <relation connection='excel-direct.174xi8q11x5eqi1ckhvq307alydb' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D10001:no:A1:D10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='variation' ordinal='1' />
+                  <column datatype='integer' name='process_step' ordinal='2' />
+                  <column datatype='integer' name='time_diff' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (steps)' inline='true' name='federated.17i5owo1od0xcy14dgf6y0dww4as' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='steps' name='excel-direct.13isiu20sfqjjm1cs4xjo0hvl7r1'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/orian/Desktop/IH_projects/vanguard-ab-test/steps.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.13isiu20sfqjjm1cs4xjo0hvl7r1' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D9:no:A1:D9:0' header='yes' outcome='6'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='variation' ordinal='1' />
+            <column datatype='integer' name='process_step' ordinal='2' />
+            <column datatype='integer' name='count' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D9:no:A1:D9:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_627578274809497CBE90572E9C993250]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[variation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>variation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_627578274809497CBE90572E9C993250]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_627578274809497CBE90572E9C993250]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_627578274809497CBE90572E9C993250]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_627578274809497CBE90572E9C993250]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='Process Step' datatype='integer' name='[process_step]' role='measure' type='quantitative' />
+      <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/orian/AppData/Local/Temp/TableauTemp/#TableauTemp_1os4zqw17v0dhn1ctk36m1rxd67m.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>variation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[variation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>variation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>process_step</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[process_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>process_step</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_627578274809497CBE90572E9C993250'>
+            <properties context=''>
+              <relation connection='excel-direct.13isiu20sfqjjm1cs4xjo0hvl7r1' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D9:no:A1:D9:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='variation' ordinal='1' />
+                  <column datatype='integer' name='process_step' ordinal='2' />
+                  <column datatype='integer' name='count' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (demographics)' inline='true' name='federated.124nwaa1on3cak17h18xa0aoik23' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='demographics' name='excel-direct.1or63za143w03q1c8ko7z0s69h6n'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/orian/Desktop/IH_projects/vanguard-ab-test/demographics.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1or63za143w03q1c8ko7z0s69h6n' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:K10001:no:A1:K10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='client_id' ordinal='1' />
+            <column datatype='integer' name='tenure_yr' ordinal='2' />
+            <column datatype='integer' name='tenure_months' ordinal='3' />
+            <column datatype='integer' name='age' ordinal='4' />
+            <column datatype='string' name='gender' ordinal='5' />
+            <column datatype='integer' name='num_accounts' ordinal='6' />
+            <column datatype='real' name='balance' ordinal='7' />
+            <column datatype='integer' name='calls_6_months' ordinal='8' />
+            <column datatype='integer' name='logins_6_months' ordinal='9' />
+            <column datatype='string' name='variation' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K10001:no:A1:K10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure_yr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure_yr]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>tenure_yr</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure_months</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure_months]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>tenure_months</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accounts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_accounts]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>num_accounts</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[balance]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>balance</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calls_6_months</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calls_6_months]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>calls_6_months</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>logins_6_months</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[logins_6_months]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>logins_6_months</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[variation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>variation</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[age]' peg='0' size='10' />
+      </column>
+      <column aggregation='None' caption='Balance (bin)' datatype='integer' name='[Balance (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[balance]' peg='0' size='50000' />
+      </column>
+      <column caption='Logins 6 Months (bin)' datatype='integer' name='[Logins 6 Months (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[logins_6_months]' peg='0' size='1' />
+      </column>
+      <column aggregation='None' caption='Tenure Months (bin)' datatype='integer' name='[Tenure Months (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[tenure_months]' peg='0' size='40' />
+      </column>
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_4A4BC43945584515BA3BDD1940CD4CF1]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Balance' datatype='real' name='[balance]' role='measure' type='quantitative' />
+      <column caption='Calls 6 Months' datatype='integer' name='[calls_6_months]' role='measure' type='quantitative' />
+      <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Logins 6 Months' datatype='integer' name='[logins_6_months]' role='measure' type='quantitative' />
+      <column caption='Num Accounts' datatype='integer' name='[num_accounts]' role='measure' type='quantitative' />
+      <column caption='Tenure Months' datatype='integer' name='[tenure_months]' role='measure' type='quantitative' />
+      <column caption='Tenure Yr' datatype='integer' name='[tenure_yr]' role='dimension' type='quantitative' />
+      <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Age (bin),Variation)' hidden='true' name='[Action (Age (bin),Variation)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Age (bin)]' />
+          <groupfilter function='level-members' level='[variation]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Gender,Variation)' hidden='true' name='[Action (Gender,Variation)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[gender]' />
+          <groupfilter function='level-members' level='[variation]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Logins 6 Months (bin),Variation)' hidden='true' name='[Action (Logins 6 Months (bin),Variation)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Logins 6 Months (bin)]' />
+          <groupfilter function='level-members' level='[variation]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Tenure Months (bin),Variation)' hidden='true' name='[Action (Tenure Months (bin),Variation)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Tenure Months (bin)]' />
+          <groupfilter function='level-members' level='[variation]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Gender,Variation)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:gender:nk]' />
+          <groupfilter function='level-members' level='[none:variation:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/orian/AppData/Local/Temp/TableauTemp/#TableauTemp_164aoxc181agzi1h58e2d03dphsj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>70595</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>client_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[client_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>client_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>70595</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure_yr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure_yr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure_yr</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure_months</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure_months]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure_months</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>939</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_accounts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_accounts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_accounts</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>balance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[balance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>balance</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>70595</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>calls_6_months</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calls_6_months]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calls_6_months</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>logins_6_months</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[logins_6_months]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>logins_6_months</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>variation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[variation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>variation</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;X&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;U&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:variation:nk]' palette='sf_bluegrass' type='palette'>
+            <map to='#0145ac'>
+              <bucket>&quot;Control&quot;</bucket>
+            </map>
+            <map to='#51d2bb'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#82c7a5'>
+              <bucket>&quot;Test&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_4A4BC43945584515BA3BDD1940CD4CF1'>
+            <properties context=''>
+              <relation connection='excel-direct.1or63za143w03q1c8ko7z0s69h6n' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:K10001:no:A1:K10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='client_id' ordinal='1' />
+                  <column datatype='integer' name='tenure_yr' ordinal='2' />
+                  <column datatype='integer' name='tenure_months' ordinal='3' />
+                  <column datatype='integer' name='age' ordinal='4' />
+                  <column datatype='string' name='gender' ordinal='5' />
+                  <column datatype='integer' name='num_accounts' ordinal='6' />
+                  <column datatype='real' name='balance' ordinal='7' />
+                  <column datatype='integer' name='calls_6_months' ordinal='8' />
+                  <column datatype='integer' name='logins_6_months' ordinal='9' />
+                  <column datatype='string' name='variation' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (errors)' inline='true' name='federated.1e5jvk9071wj4318p8lpt0oe9onq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='errors' name='excel-direct.0iq7wz617ypsu819nwe7p0rt67dc'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/orian/Desktop/IH_projects/vanguard-ab-test/errors.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0iq7wz617ypsu819nwe7p0rt67dc' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:F18:no:A1:F18:0' header='yes' outcome='6'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='variation' ordinal='1' />
+            <column datatype='integer' name='process_step' ordinal='2' />
+            <column datatype='integer' name='step_diff' ordinal='3' />
+            <column datatype='integer' name='count' ordinal='4' />
+            <column datatype='integer' name='error_on_step' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F18:no:A1:F18:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[variation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>variation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>step_diff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[step_diff]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>step_diff</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>error_on_step</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[error_on_step]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>error_on_step</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_7839550572204426B63387794A3CCCD3]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='Error On Step' datatype='integer' name='[error_on_step]' role='measure' type='quantitative' />
+      <column caption='Process Step' datatype='integer' name='[process_step]' role='measure' type='quantitative' />
+      <column caption='Step Diff' datatype='integer' name='[step_diff]' role='measure' type='quantitative' />
+      <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      <column-instance column='[error_on_step]' derivation='None' name='[none:error_on_step:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/orian/AppData/Local/Temp/TableauTemp/#TableauTemp_1v6tpor17iybkm17w8xi00srbwi9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/28/2025 01:18:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>variation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[variation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>variation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>process_step</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[process_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>process_step</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>step_diff</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[step_diff]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>step_diff</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>error_on_step</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[error_on_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>error_on_step</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7839550572204426B63387794A3CCCD3]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1e5jvk9071wj4318p8lpt0oe9onq].[sum:count:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1e5jvk9071wj4318p8lpt0oe9onq]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:error_on_step:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_7839550572204426B63387794A3CCCD3'>
+            <properties context=''>
+              <relation connection='excel-direct.0iq7wz617ypsu819nwe7p0rt67dc' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:F18:no:A1:F18:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='variation' ordinal='1' />
+                  <column datatype='integer' name='process_step' ordinal='2' />
+                  <column datatype='integer' name='step_diff' ordinal='3' />
+                  <column datatype='integer' name='count' ordinal='4' />
+                  <column datatype='integer' name='error_on_step' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.124nwaa1on3cak17h18xa0aoik23'>
+      <datasources>
+        <datasource caption='Sheet1 (demographics)' name='federated.124nwaa1on3cak17h18xa0aoik23' />
+      </datasources>
+      <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+        <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+        <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+        <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+        <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:gender:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:gender:nk]' member='&quot;F&quot;' />
+          <groupfilter function='member' level='[none:gender:nk]' member='&quot;M&quot;' />
+          <groupfilter function='member' level='[none:gender:nk]' member='&quot;U&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:variation:nk]' member='&quot;Control&quot;' />
+          <groupfilter function='member' level='[none:variation:nk]' member='&quot;Test&quot;' />
+        </groupfilter>
+        <target field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' />
+      </filter>
+    </shared-view>
+    <shared-view name='federated.1e5jvk9071wj4318p8lpt0oe9onq'>
+      <datasources>
+        <datasource caption='Sheet1 (errors)' name='federated.1e5jvk9071wj4318p8lpt0oe9onq' />
+      </datasources>
+      <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+        <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+        <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1e5jvk9071wj4318p8lpt0oe9onq'>
+        <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+        <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:variation:nk]' member='&quot;Control&quot;' />
+          <groupfilter function='member' level='[none:variation:nk]' member='&quot;Test&quot;' />
+        </groupfilter>
+        <target field='[federated.1e5jvk9071wj4318p8lpt0oe9onq].[none:variation:nk]' />
+      </filter>
+    </shared-view>
+    <shared-view name='federated.1t1mdz20rf98hj12g1mxv1ejayez'>
+      <datasources>
+        <datasource caption='Sheet1 (time_step)' name='federated.1t1mdz20rf98hj12g1mxv1ejayez' />
+      </datasources>
+      <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+        <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+        <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1t1mdz20rf98hj12g1mxv1ejayez'>
+        <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+        <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:variation:nk]' member='&quot;Control&quot;' />
+          <groupfilter function='member' level='[none:variation:nk]' member='&quot;Test&quot;' />
+        </groupfilter>
+        <target field='[federated.1t1mdz20rf98hj12g1mxv1ejayez].[none:variation:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action2_F883840D454743578F7FCE4F899E283B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='gender' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_4ED31BEE22234F979DB4A51C6B89B195]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Age' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (demographics)' name='federated.124nwaa1on3cak17h18xa0aoik23' />
+          </datasources>
+          <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[age]' peg='0' size='10' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Num Accounts' datatype='integer' name='[num_accounts]' role='measure' type='quantitative' />
+            <column-instance column='[num_accounts]' derivation='Sum' name='[sum:num_accounts:qk]' pivot='key' type='quantitative' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Gender,Variation)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_F883840D454743578F7FCE4F899E283B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[gender]' />
+              <groupfilter function='level-members' level='[variation]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:Age (bin):ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='1' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='2' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='3' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='4' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='5' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='6' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='7' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='8' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='9' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='10' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='11' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='12' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='13' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='14' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='15' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='16' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='17' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='18' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:gender:nk]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Gender,Variation)]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:Age (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.124nwaa1on3cak17h18xa0aoik23].[sum:num_accounts:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' value='false' />
+            <format attr='display' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:Age (bin):ok]' value='true' />
+            <format attr='vertical-align' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:Age (bin):ok]' value='auto' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='wrap' value='off' />
+                <format attr='text-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#000000' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.124nwaa1on3cak17h18xa0aoik23].[sum:num_accounts:qk]</rows>
+        <cols>([federated.124nwaa1on3cak17h18xa0aoik23].[none:Age (bin):ok] / [federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk])</cols>
+        <show-full-range>
+          <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Age (bin)]</column>
+          <column>[federated.124nwaa1on3cak17h18xa0aoik23].[F1 (bin)]</column>
+          <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Tenure Months (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{EDABF183-FCA4-4F9D-9289-546A98994DBC}' />
+    </worksheet>
+    <worksheet name='Balance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (demographics)' name='federated.124nwaa1on3cak17h18xa0aoik23' />
+          </datasources>
+          <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[age]' peg='0' size='10' />
+            </column>
+            <column aggregation='None' caption='Balance (bin)' datatype='integer' name='[Balance (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[balance]' peg='0' size='50000' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Balance' datatype='real' name='[balance]' role='measure' type='quantitative' />
+            <column-instance column='[num_accounts]' derivation='Count' name='[cnt:num_accounts:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Balance (bin)]' derivation='None' name='[none:Balance (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Num Accounts' datatype='integer' name='[num_accounts]' role='measure' type='quantitative' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Age (bin),Variation)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_4ED31BEE22234F979DB4A51C6B89B195]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Age (bin)]' />
+              <groupfilter function='level-members' level='[variation]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Gender,Variation)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_F883840D454743578F7FCE4F899E283B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[gender]' />
+              <groupfilter function='level-members' level='[variation]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:Balance (bin):ok]'>
+            <groupfilter expression='COUNT([num_accounts]) &gt;= 200' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='0' />
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='1' />
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='2' />
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='3' />
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='4' />
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='5' />
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='6' />
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='7' />
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='8' />
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='9' />
+                <groupfilter function='member' level='[none:Balance (bin):ok]' member='10' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:Balance (bin):ok]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:gender:nk]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Gender,Variation)]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Age (bin),Variation)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.124nwaa1on3cak17h18xa0aoik23].[cnt:num_accounts:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' value='false' />
+            <format attr='display' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:Balance (bin):ok]' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.124nwaa1on3cak17h18xa0aoik23].[cnt:num_accounts:qk]</rows>
+        <cols>([federated.124nwaa1on3cak17h18xa0aoik23].[none:Balance (bin):ok] / [federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk])</cols>
+        <show-full-range>
+          <column>[federated.124nwaa1on3cak17h18xa0aoik23].[F1 (bin)]</column>
+          <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Tenure Months (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{ED7455A0-5346-4CA1-A06A-92B0916E4691}' />
+    </worksheet>
+    <worksheet name='Logins'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Logins last 6 months</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (demographics)' name='federated.124nwaa1on3cak17h18xa0aoik23' />
+          </datasources>
+          <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[age]' peg='0' size='10' />
+            </column>
+            <column caption='Logins 6 Months (bin)' datatype='integer' name='[Logins 6 Months (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[logins_6_months]' peg='0' size='1' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[num_accounts]' derivation='Count' name='[cnt:num_accounts:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column caption='Logins 6 Months' datatype='integer' name='[logins_6_months]' role='measure' type='quantitative' />
+            <column-instance column='[Logins 6 Months (bin)]' derivation='None' name='[none:Logins 6 Months (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Num Accounts' datatype='integer' name='[num_accounts]' role='measure' type='quantitative' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Age (bin),Variation)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_4ED31BEE22234F979DB4A51C6B89B195]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Age (bin)]' />
+              <groupfilter function='level-members' level='[variation]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Gender,Variation)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_F883840D454743578F7FCE4F899E283B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[gender]' />
+              <groupfilter function='level-members' level='[variation]' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.124nwaa1on3cak17h18xa0aoik23].[cnt:num_accounts:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:gender:nk]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Gender,Variation)]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Age (bin),Variation)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.124nwaa1on3cak17h18xa0aoik23].[cnt:num_accounts:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' value='false' />
+            <format attr='display' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:Logins 6 Months (bin):ok]' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' value='Sample'>
+              <formatted-text>
+                <run>Sample</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.124nwaa1on3cak17h18xa0aoik23].[cnt:num_accounts:qk]</rows>
+        <cols>([federated.124nwaa1on3cak17h18xa0aoik23].[none:Logins 6 Months (bin):ok] / [federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk])</cols>
+        <show-full-range>
+          <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Logins 6 Months (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{0DEEEB16-CA84-4A83-910C-B31FA7D6B70A}' />
+    </worksheet>
+    <worksheet name='Tenure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Tenure (months)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (demographics)' name='federated.124nwaa1on3cak17h18xa0aoik23' />
+          </datasources>
+          <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[age]' peg='0' size='10' />
+            </column>
+            <column aggregation='None' caption='Tenure Months (bin)' datatype='integer' name='[Tenure Months (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[tenure_months]' peg='0' size='40' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Tenure Months (bin)]' derivation='None' name='[none:Tenure Months (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Num Accounts' datatype='integer' name='[num_accounts]' role='measure' type='quantitative' />
+            <column-instance column='[num_accounts]' derivation='Sum' name='[sum:num_accounts:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure Months' datatype='integer' name='[tenure_months]' role='measure' type='quantitative' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Age (bin),Variation)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_4ED31BEE22234F979DB4A51C6B89B195]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Age (bin)]' />
+              <groupfilter function='level-members' level='[variation]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Gender,Variation)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_F883840D454743578F7FCE4F899E283B]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[gender]' />
+              <groupfilter function='level-members' level='[variation]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:Tenure Months (bin):ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Tenure Months (bin):ok]' member='1' />
+              <groupfilter function='member' level='[none:Tenure Months (bin):ok]' member='2' />
+              <groupfilter function='member' level='[none:Tenure Months (bin):ok]' member='3' />
+              <groupfilter function='member' level='[none:Tenure Months (bin):ok]' member='4' />
+              <groupfilter function='member' level='[none:Tenure Months (bin):ok]' member='5' />
+              <groupfilter function='member' level='[none:Tenure Months (bin):ok]' member='6' />
+              <groupfilter function='member' level='[none:Tenure Months (bin):ok]' member='7' />
+              <groupfilter function='member' level='[none:Tenure Months (bin):ok]' member='8' />
+              <groupfilter function='member' level='[none:Tenure Months (bin):ok]' member='9' />
+              <groupfilter function='member' level='[none:Tenure Months (bin):ok]' member='10' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:gender:nk]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:Tenure Months (bin):ok]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Gender,Variation)]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[Action (Age (bin),Variation)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.124nwaa1on3cak17h18xa0aoik23].[sum:num_accounts:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' value='false' />
+            <format attr='display' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:Tenure Months (bin):ok]' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.124nwaa1on3cak17h18xa0aoik23].[sum:num_accounts:qk]</rows>
+        <cols>([federated.124nwaa1on3cak17h18xa0aoik23].[none:Tenure Months (bin):ok] / [federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk])</cols>
+      </table>
+      <simple-id uuid='{605038A3-C552-4CF5-9E2A-54898B8AE83B}' />
+    </worksheet>
+    <worksheet name='avg time_diff'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (time_step)' name='federated.1t1mdz20rf98hj12g1mxv1ejayez' />
+            <datasource caption='Sheet1 (demographics)' name='federated.124nwaa1on3cak17h18xa0aoik23' />
+          </datasources>
+          <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1t1mdz20rf98hj12g1mxv1ejayez'>
+            <column-instance column='[time_diff]' derivation='Avg' name='[avg:time_diff:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='integer' name='[process_step]' role='measure' type='quantitative' />
+            <column caption='Time Diff' datatype='integer' name='[time_diff]' role='measure' type='quantitative' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t1mdz20rf98hj12g1mxv1ejayez].[none:process_step:qk]' field-type='quantitative' max='4' min='1' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1t1mdz20rf98hj12g1mxv1ejayez].[none:process_step:qk]' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1t1mdz20rf98hj12g1mxv1ejayez].[avg:time_diff:qk]</rows>
+        <cols>[federated.1t1mdz20rf98hj12g1mxv1ejayez].[none:process_step:qk]</cols>
+      </table>
+      <simple-id uuid='{F0B7B33F-90F2-4A1F-AED3-35D933574FFC}' />
+    </worksheet>
+    <worksheet name='errors'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (errors)' name='federated.1e5jvk9071wj4318p8lpt0oe9onq' />
+            <datasource caption='Sheet1 (demographics)' name='federated.124nwaa1on3cak17h18xa0aoik23' />
+          </datasources>
+          <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1e5jvk9071wj4318p8lpt0oe9onq'>
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column caption='Error On Step' datatype='integer' name='[error_on_step]' role='measure' type='quantitative' />
+            <column-instance column='[error_on_step]' derivation='None' name='[none:error_on_step:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1e5jvk9071wj4318p8lpt0oe9onq].[none:error_on_step:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>1</bucket>
+              <bucket>2</bucket>
+              <bucket>3</bucket>
+              <bucket>4</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' />
+              <text column='[federated.1e5jvk9071wj4318p8lpt0oe9onq].[sum:count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1e5jvk9071wj4318p8lpt0oe9onq].[sum:count:qk]</rows>
+        <cols>([federated.1e5jvk9071wj4318p8lpt0oe9onq].[none:error_on_step:ok] / [federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk])</cols>
+      </table>
+      <simple-id uuid='{06808D62-3034-44CF-9D90-D799A711A122}' />
+    </worksheet>
+    <worksheet name='gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (demographics)' name='federated.124nwaa1on3cak17h18xa0aoik23' />
+          </datasources>
+          <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+            <column-instance column='[gender]' derivation='Count' name='[cnt:gender:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.124nwaa1on3cak17h18xa0aoik23].[cnt:gender:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:gender:nk]</column>
+            <column>[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.124nwaa1on3cak17h18xa0aoik23].[cnt:gender:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' value='Sample'>
+              <formatted-text>
+                <run>Sample</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' />
+              <text column='[federated.124nwaa1on3cak17h18xa0aoik23].[cnt:gender:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.124nwaa1on3cak17h18xa0aoik23].[cnt:gender:qk]</rows>
+        <cols>([federated.124nwaa1on3cak17h18xa0aoik23].[none:gender:nk] / [federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk])</cols>
+      </table>
+      <simple-id uuid='{F8171792-6FF8-4980-938E-48BEF507358C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Sheet1 (demographics)' name='federated.124nwaa1on3cak17h18xa0aoik23' />
+      </datasources>
+      <datasource-dependencies datasource='federated.124nwaa1on3cak17h18xa0aoik23'>
+        <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+        <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='34' param='horz' type-v2='layout-flow' w='76647' x='586' y='1042'>
+            <zone h='97916' id='32' param='vert' type-v2='layout-flow' w='76647' x='586' y='1042'>
+              <zone h='97916' id='29' param='horz' type-v2='layout-flow' w='76647' x='586' y='1042'>
+                <zone h='97916' id='27' param='horz' type-v2='layout-flow' w='76647' x='586' y='1042'>
+                  <zone h='97916' id='24' param='horz' type-v2='layout-flow' w='76647' x='586' y='1042'>
+                    <zone h='97916' id='20' param='horz' type-v2='layout-flow' w='76647' x='586' y='1042'>
+                      <zone h='97916' id='16' param='horz' type-v2='layout-flow' w='76647' x='586' y='1042'>
+                        <zone h='97916' id='14' type-v2='layout-basic' w='76647' x='586' y='1042'>
+                          <zone h='97916' id='11' param='horz' type-v2='layout-flow' w='76647' x='586' y='1042'>
+                            <zone h='97916' id='7' param='horz' type-v2='layout-flow' w='76647' x='586' y='1042'>
+                              <zone h='97916' id='3' param='vert' type-v2='layout-flow' w='76647' x='586' y='1042'>
+                                <zone forceUpdate='true' h='6381' id='1' type-v2='text' w='76647' x='586' y='1042'>
+                                  <formatted-text>
+                                    <run bold='true' fontalignment='1' fontsize='15'>Vanguard UI Demographics</run>
+                                  </formatted-text>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                                <zone h='91535' id='4' param='vert' type-v2='layout-flow' w='76647' x='586' y='7423'>
+                                  <zone h='35285' id='21' param='horz' type-v2='layout-flow' w='76647' x='586' y='7423'>
+                                    <zone h='35285' id='22' name='Balance' w='64929' x='586' y='7423'>
+                                      <layout-cache cell-count-w='22' minheight='177' non-cell-size-w='1' type-h='scalable' type-w='cell' />
+                                      <zone-style>
+                                        <format attr='border-color' value='#000000' />
+                                        <format attr='border-style' value='none' />
+                                        <format attr='border-width' value='0' />
+                                        <format attr='margin' value='4' />
+                                      </zone-style>
+                                    </zone>
+                                    <zone fixed-size='160' h='35285' id='33' is-fixed='true' param='vert' type-v2='layout-flow' w='11713' x='65515' y='7423'>
+                                      <zone h='19271' id='35' mode='radiolist' name='gender' param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type-v2='filter' values='database' w='11713' x='65515' y='7423'>
+                                        <zone-style>
+                                          <format attr='border-color' value='#000000' />
+                                          <format attr='border-style' value='none' />
+                                          <format attr='border-width' value='0' />
+                                          <format attr='margin' value='4' />
+                                        </zone-style>
+                                      </zone>
+                                      <zone h='10938' id='37' name='Logins' pane-specification-id='0' param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type-v2='color' w='11713' x='65515' y='26694'>
+                                        <zone-style>
+                                          <format attr='border-color' value='#000000' />
+                                          <format attr='border-style' value='none' />
+                                          <format attr='border-width' value='0' />
+                                          <format attr='margin' value='4' />
+                                        </zone-style>
+                                      </zone>
+                                    </zone>
+                                  </zone>
+                                  <zone h='28124' id='18' name='Tenure' w='76647' x='586' y='42708'>
+                                    <layout-cache minheight='177' type-h='scalable' type-w='cell' />
+                                    <zone-style>
+                                      <format attr='border-color' value='#000000' />
+                                      <format attr='border-style' value='none' />
+                                      <format attr='border-width' value='0' />
+                                      <format attr='margin' value='4' />
+                                    </zone-style>
+                                  </zone>
+                                  <zone h='28124' id='8' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='76647' x='586' y='70832'>
+                                    <zone fixed-size='309' h='28125' id='9' is-fixed='true' name='Age' w='38360' x='586' y='70833'>
+                                      <layout-cache minheight='177' type-h='scalable' type-w='cell' />
+                                      <zone-style>
+                                        <format attr='border-color' value='#000000' />
+                                        <format attr='border-style' value='none' />
+                                        <format attr='border-width' value='0' />
+                                        <format attr='margin' value='4' />
+                                      </zone-style>
+                                    </zone>
+                                    <zone h='28125' id='25' name='Logins' w='38287' x='38946' y='70833'>
+                                      <layout-cache cell-count-w='14' minheight='177' non-cell-size-w='2' type-h='scalable' type-w='cell' />
+                                      <zone-style>
+                                        <format attr='border-color' value='#000000' />
+                                        <format attr='border-style' value='none' />
+                                        <format attr='border-width' value='0' />
+                                        <format attr='margin' value='4' />
+                                      </zone-style>
+                                    </zone>
+                                  </zone>
+                                </zone>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='97916' id='5' name='gender' w='22181' x='77233' y='1042'>
+            <layout-cache cell-count-w='6' minheight='177' non-cell-size-w='1' type-h='scalable' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones />
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7A6BF7E4-C581-4BA5-8BBC-DE9F7940A126}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='137'>
+    <window class='worksheet' name='gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='106'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='106'>
+            <card param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type='filter' />
+            <card param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:gender:nk]' type='filter' />
+            <card pane-specification-id='3' param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{48478062-4557-4D87-8EAB-289CABD97D78}' />
+    </window>
+    <window class='worksheet' name='Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{334D4F8C-13AD-4208-813C-DDA2A9B53815}' />
+    </window>
+    <window class='worksheet' name='Tenure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{12FC8026-3522-47CC-9DAB-F4A47B316EFA}' />
+    </window>
+    <window class='worksheet' name='Balance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{60E9FFBF-8500-4569-9B53-654D90816E62}' />
+    </window>
+    <window class='worksheet' name='Logins'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BFB0600C-80C6-4DA4-8713-84B90840FFE4}' />
+    </window>
+    <window class='worksheet' name='avg time_diff'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{33FA4A55-B0E5-4064-9418-D46BEDAAAE7F}' />
+    </window>
+    <window class='worksheet' name='errors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.124nwaa1on3cak17h18xa0aoik23].[none:variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1D22972F-B229-4A4F-AA68-B16A314463C7}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Balance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Logins'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+        <viewpoint name='Tenure'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3A30FCA8-0181-4F58-91CF-537D8A71635A}' />
+    </window>
+  </windows>
+</workbook>
